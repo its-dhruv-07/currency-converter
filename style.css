@@ -1,24 +1,30 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: rgba(255, 102, 47, 0.799);
+  padding: 1rem;
 }
+
 .outer {
   padding: 2rem;
   border-radius: 1rem;
-  min-height: 45vh;
-  width: 40vw;
+  width: 100%;
+  max-width: 500px;   
   background-color: antiquewhite;
 }
+
 form {
   margin: 2rem 0 1rem 0;
 }
+
 form select,
 button,
 input {
@@ -27,51 +33,94 @@ input {
   outline: none;
   border-radius: 0.75rem;
 }
+
 form input {
   border: 1.2px solid lightgray;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   height: 3rem;
   padding-left: 0.5rem;
 }
+
 .selector {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap; 
 }
+
 .select-container {
-  padding: 0 0.5rem;
+  padding: 0.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
+  width: 100%;
+  max-width: 120px;
   border-radius: 0.5rem;
   border: 1px solid lightgray;
-  min-height: 0.1vh;
   background-color: white;
 }
+
 .select-container select {
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: auto;
 }
+
 .select-container img {
   max-width: 2rem;
 }
+
 .selector i {
   font-size: 1.5rem;
   margin-top: 1rem;
 }
-.msg{
+
+.msg {
   margin: 2rem 0;
   text-align: center;
   color: black;
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
-button{
+
+button {
   margin: 2rem 0 0.5rem 0;
-  height: 10vh;
+  height: 3rem;
   background-color: rgb(255, 55, 255);
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: bold;
+  cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+  .outer {
+    padding: 1.2rem;
+  }
+
+  form input {
+    font-size: 1rem;
+    height: 2.5rem;
+  }
+
+  .msg {
+    font-size: 1rem;
+  }
+
+  button {
+    height: 2.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .outer {
+    max-width: 90%;
+  }
+
+  .selector {
+    justify-content: center;
+  }
 }
