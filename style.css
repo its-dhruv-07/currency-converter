@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(255, 102, 47, 0.799);
+}
+.outer {
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 40vw;
+  background-color: antiquewhite;
+}
+form {
+  margin: 2rem 0 1rem 0;
+}
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+form input {
+  border: 1.2px solid lightgray;
+  font-size: 1.5rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+.selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.select-container {
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  min-height: 0.1vh;
+  background-color: white;
+}
+.select-container select {
+  font-size: 1.1rem;
+  width: auto;
+}
+.select-container img {
+  max-width: 2rem;
+}
+.selector i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.msg{
+  margin: 2rem 0;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+button{
+  margin: 2rem 0 0.5rem 0;
+  height: 10vh;
+  background-color: rgb(255, 55, 255);
+  font-size: 1.15rem;
+  font-weight: bold;
+}
